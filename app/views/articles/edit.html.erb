@@ -1,0 +1,18 @@
+<h1>edit</h1>
+<div class="container">
+  <div class="d-flex">
+    <%= form_with model: @article do |f| %>
+    <div>
+      <%= f.label :title, class: 'col-6' %>
+
+      <%= f.text_field :title, class: 'col-6' %>
+    </div>
+    <div>
+      <%= f.label :content, class: 'col-6' %>
+      <%= f.text_field :content, class: 'col-6' %>
+    </div>
+
+    <div class="col-12"><%= f.submit  class: "w-100 p-0 m-0 no-padding"  %></div>
+    <% end %>
+  </div>
+</div>
